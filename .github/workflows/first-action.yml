@@ -1,11 +1,13 @@
-name: Frist Worksflow
+name: First Workflow
+
 on: workflow_dispatch
-jobs: 
-  first-job: 
-    run-on: ubuntu-latest
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest   # should be "runs-on", not "run-on"
     steps:
-     - name: Print Greeting
+      - name: Print Greeting
         run: echo "Hello World"
-     - name: Print GoodBye
+
+      - name: Print GoodBye
         run: echo "Done-Bye!"
-    
